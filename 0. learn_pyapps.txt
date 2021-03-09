@@ -21,7 +21,13 @@ SequenceMatcher(None, "Rainn", "Rain").ratio()
 Pandas
 Help in loading data
 
+::Libraries
 json
 difflib
 Pandas
+
+:::interactive python
 ipython
+Jupyter Notebooks
+
+This is cool

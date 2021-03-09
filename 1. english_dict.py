@@ -23,6 +23,15 @@ def get_meaning(w):
         return "The word does not exist, please check again."
 word = input("Enter a word: ")
 
+'''
+output = get_meaning(word.lower())
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
+'''
+
 output = get_meaning(word.lower())
 if type(output) == list:
     for item in output:
