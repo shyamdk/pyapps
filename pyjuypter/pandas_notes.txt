@@ -1,0 +1,28 @@
+Interactive Shells for PYthon
+ipython
+jupyter
+
+
+In Juypter, explore data!
+
+
+import pandas
+df = pandas.read_csv("supermarkets.csv")
+df
+
+pandas.read_json("supermarkets.json")
+
+pip install xlrd
+pip install openpyxl
+
+pandas.read_excel("supermarkets.xls", sheet_name=0)
+
+pandas.read_csv("supermarkets-commas.txt")
+pandas.read_csv("supermarkets-semi-colons.txt", sep=";")
+
+it is important to give header = None
+
+assigning column names
+df = pandas.read_csv("data.txt", header = None)
+df.columns = ["Mon","Tue"]
+df
