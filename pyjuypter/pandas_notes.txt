@@ -25,4 +25,29 @@ it is important to give header = None
 assigning column names
 df = pandas.read_csv("data.txt", header = None)
 df.columns = ["Mon","Tue"]
-df
+
+#slicing and indexing
+import pandas
+df1 = pandas.read_json("http://pythonhow.com/supermarkets.json")
+df1
+df1 = df1.set_index("Employees")
+df1
+df1.loc[8:25,"Country": "Name"]
+
+# using indexing
+df1.iloc[1:3,1:3]  #does not include 1st one, show 2 and 3
+df1.drop("Address", 1) #1 stand for column
+df1.drop(df1.index[0:3],0) #0 for row
+df1.drop(8, 0) #1 stand for row - 8 is indexed column value
+df1.drop(df1.columns[1:3],1) #1 for columns
+#add a column
+df1["Continent"] = df1.shape[0]*["North America"]
+df1["Continent"] = df1["Country"]+ "," + "North America"
+#adding a row to dataframe can be tricky and can be done by tranposing the df and adding a column and transposing again
+
+df1_t[10] = [7, "342, Kpura Road", "Bangalore", "Karnataka", "India", "Govinda", "India"]
+df1_t
+df1 = df1_t.T
+df1
+
+
