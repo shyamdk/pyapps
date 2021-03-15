@@ -50,4 +50,15 @@ df1_t
 df1 = df1_t.T
 df1
 
+## given address finding logitude and latitude
+pip import geopy
+import pandas
+df1 = pandas.read_json("http://pythonhow.com/supermarkets.json")
+df1
+from geopy.geocoders import ArcGIS
+nom = ArcGIS()
+n = nom.geocode("Century Central, Kanakapura Main Road, Bangalore - 560111")
+n.latitude()
+n.latitude()
+
 
